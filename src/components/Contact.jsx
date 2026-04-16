@@ -55,7 +55,7 @@ const Contact = () => {
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="text-5xl md:text-8xl font-black text-slate-900 mb-6 tracking-tighter"
+                        className="text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 mb-6 tracking-tighter"
                     >
                         Let's <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-amber-500">Connect</span>
                     </motion.h2>
@@ -100,7 +100,7 @@ const Contact = () => {
                     <motion.form
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        className="bg-white p-8 md:p-12 rounded-[3rem] border border-slate-200 shadow-xl relative overflow-hidden group"
+                        className="bg-white p-6 md:p-10 lg:p-12 rounded-[2.5rem] md:rounded-[3rem] border border-slate-200 shadow-xl relative overflow-hidden group"
                         onSubmit={onSubmit}
                     >
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">

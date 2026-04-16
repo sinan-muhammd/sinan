@@ -26,80 +26,85 @@ export default function About() {
           </motion.h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 auto-rows-[minmax(200px,auto)]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-[minmax(220px,auto)]">
 
+          {/* Intro Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="md:col-span-2 lg:col-span-2 row-span-2 bg-slate-50 border border-slate-100 rounded-3xl p-8 md:p-10 flex flex-col justify-between group hover:border-emerald-200 transition-all duration-300 shadow-sm hover:shadow-md"
+            className="md:col-span-2 row-span-2 bg-slate-50 border border-slate-100 rounded-[2.5rem] p-8 md:p-12 flex flex-col justify-between group hover:border-emerald-200 transition-all duration-300 shadow-sm hover:shadow-md"
           >
-            <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-6 text-emerald-600 shadow-sm border border-emerald-200">
-              <Code2 size={22} />
+            <div className="w-14 h-14 rounded-2xl bg-emerald-100 flex items-center justify-center mb-8 text-emerald-600 shadow-sm border border-emerald-200 transition-transform group-hover:scale-110">
+              <Code2 size={26} />
             </div>
             <div>
-              <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">Who I Am</h3>
-              <p className="text-slate-600 leading-relaxed mb-3">
+              <h3 className="text-3xl font-black text-slate-900 mb-6 tracking-tight">Who I Am</h3>
+              <p className="text-slate-600 text-lg leading-relaxed mb-4">
                 I'm an aspiring MERN Stack Developer passionate about building responsive, user-friendly applications and solving real-world problems through clean, efficient code.
               </p>
-              <p className="text-slate-500 leading-relaxed text-sm">
+              <p className="text-slate-500 leading-relaxed font-medium">
                 I specialize in React, Node.js, and modern web architectures — always aiming for elegant digital experiences.
               </p>
             </div>
           </motion.div>
 
+          {/* Role Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="md:col-span-2 lg:col-span-2 bg-slate-50 border border-slate-100 rounded-3xl p-7 flex flex-col justify-between group hover:border-blue-200 transition-all duration-300 shadow-sm hover:shadow-md"
+            className="md:col-span-2 bg-slate-50 border border-slate-100 rounded-[2rem] p-8 flex flex-col justify-between group hover:border-blue-200 transition-all duration-300 shadow-sm hover:shadow-md"
           >
-            <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-5 text-blue-600 shadow-sm border border-blue-200">
-              <Briefcase size={20} />
+            <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-6 text-blue-600 shadow-sm border border-blue-200 transition-transform group-hover:scale-110">
+              <Briefcase size={22} />
             </div>
             <div>
-              <h4 className="text-lg font-black text-slate-900">Frontend Intern</h4>
-              <p className="text-blue-600 text-xs font-bold tracking-widest uppercase mb-3">Febno Technologies</p>
-              <ul className="text-slate-500 text-sm space-y-1.5 list-disc list-inside">
+              <h4 className="text-xl font-black text-slate-900">Frontend Intern</h4>
+              <p className="text-blue-600 text-sm font-bold tracking-widest uppercase mb-4">Febno Technologies</p>
+              <ul className="text-slate-500 font-medium space-y-2 list-disc list-inside">
                 <li>Redesigned website UI using React.js</li>
                 <li>Built reusable modular components</li>
               </ul>
             </div>
           </motion.div>
 
+          {/* Location Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15 }}
-            className="bg-slate-50 border border-slate-100 rounded-3xl p-7 flex flex-col items-center justify-center text-center group hover:border-violet-200 transition-all duration-300 shadow-sm hover:shadow-md"
+            className="bg-slate-50 border border-slate-100 rounded-[2rem] p-8 flex flex-col items-center justify-center text-center group hover:border-violet-200 transition-all duration-300 shadow-sm hover:shadow-md"
           >
-            <div className="w-12 h-12 rounded-xl bg-violet-100 flex items-center justify-center mb-4 text-violet-600 shadow-sm border border-violet-200">
-              <MapPin size={20} />
+            <div className="w-12 h-12 rounded-xl bg-violet-100 flex items-center justify-center mb-5 text-violet-600 shadow-sm border border-violet-200 transition-transform group-hover:scale-110">
+              <MapPin size={22} />
             </div>
-            <p className="text-slate-900 font-bold text-sm">Kerala, India</p>
-            <p className="text-slate-500 text-xs mt-1">Open to Remote</p>
-            <span className="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold uppercase tracking-wider border border-emerald-200">
+            <p className="text-slate-900 font-black text-base tracking-tight">Kerala, India</p>
+            <p className="text-slate-500 text-sm mt-1 font-medium">Open to Remote</p>
+            <span className="mt-4 inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-black uppercase tracking-wider border border-emerald-200">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" /> Available
             </span>
           </motion.div>
 
+          {/* Email Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="bg-slate-50 border border-slate-100 rounded-3xl p-7 flex flex-col items-center justify-center text-center group hover:border-rose-200 transition-all duration-300 shadow-sm hover:shadow-md"
+            className="bg-slate-50 border border-slate-100 rounded-[2rem] p-8 flex flex-col items-center justify-center text-center group hover:border-rose-200 transition-all duration-300 shadow-sm hover:shadow-md"
           >
-            <div className="w-12 h-12 rounded-xl bg-rose-100 flex items-center justify-center mb-4 text-rose-600 shadow-sm border border-rose-200">
-              <Mail size={20} />
+            <div className="w-12 h-12 rounded-xl bg-rose-100 flex items-center justify-center mb-5 text-rose-600 shadow-sm border border-rose-200 transition-transform group-hover:scale-110">
+              <Mail size={22} />
             </div>
-            <p className="text-slate-900 font-bold text-sm">Say Hello</p>
-            <p className="text-slate-500 text-[11px] mt-1.5 break-all">muhammadsinanac111@gmail.com</p>
+            <p className="text-slate-900 font-black text-base tracking-tight">Say Hello</p>
+            <p className="text-slate-500 text-[11px] mt-2 font-medium break-all">muhammadsinanac111@gmail.com</p>
           </motion.div>
 
+          {/* Education Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.25 }}
-            className="md:col-span-3 lg:col-span-4 bg-slate-50 border border-slate-100 rounded-3xl p-8 md:p-10 gap-8 group hover:border-amber-200 transition-all duration-300 shadow-sm hover:shadow-md"
+            className="md:col-span-2 lg:col-span-4 bg-slate-50 border border-slate-100 rounded-[2.5rem] p-8 md:p-12 group hover:border-amber-200 transition-all duration-300 shadow-sm hover:shadow-md"
           >
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-amber-600 shadow-sm border border-amber-200">

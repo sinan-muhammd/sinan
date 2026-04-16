@@ -64,12 +64,16 @@ const SelectedWorks = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               viewport={{ once: true }}
-              className="group relative"
+              className="group"
             >
-              <div className="relative w-full overflow-hidden rounded-[2.5rem] bg-white border border-slate-100 shadow-sm transition-all duration-500 hover:shadow-xl aspect-[16/11] flex flex-col p-2">
-                
+              <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noreferrer"
+                className="relative block w-full overflow-hidden rounded-[2.5rem] bg-white border border-slate-100 shadow-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1 flex flex-col p-2"
+              >
                 {/* Image Section */}
-                <div className="w-full h-[65%] rounded-[2rem] overflow-hidden relative">
+                <div className="w-full aspect-[16/10] sm:aspect-video lg:h-72 rounded-[2rem] overflow-hidden relative">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -80,20 +84,21 @@ const SelectedWorks = () => {
                       {project.category}
                     </span>
                   </div>
-                  <motion.a 
-                      href={project.link} 
-                      target="_blank" 
-                      rel="noreferrer"
-                      whileHover={{ scale: 1.1 }}
-                      className="absolute top-4 right-4 w-12 h-12 rounded-full bg-white text-slate-900 border border-slate-100 shadow-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer"
-                    >
-                      <ArrowUpRight size={20} className="w-5 h-5 text-slate-900 group-hover:text-blue-600 transition-colors" />
-                  </motion.a>
+                  <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-white/90 backdrop-blur-md text-slate-900 border border-slate-200 shadow-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                    <ArrowUpRight size={20} className="w-5 h-5 text-slate-900 group-hover:text-blue-600 transition-colors" />
+                  </div>
                 </div>
 
                 {/* Content Section */}
                 <div className="flex-1 flex flex-col justify-between p-6">
-                  <h3 className="text-2xl font-black text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">{project.title}</h3>
+                  <div className="flex justify-between items-start gap-4">
+                    <h3 className="text-2xl font-black text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">
+                      {project.title}
+                    </h3>
+                    <div className="md:hidden w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600">
+                      <ArrowUpRight size={16} />
+                    </div>
+                  </div>
                   <div className="flex flex-wrap gap-2 mt-4">
                     {project.tags.map((tag, i) => (
                       <span key={i} className="bg-slate-50 border border-slate-200 text-slate-600 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-tight">
@@ -102,8 +107,7 @@ const SelectedWorks = () => {
                     ))}
                   </div>
                 </div>
-
-              </div>
+              </a>
             </motion.div>
           ))}
         </div>

@@ -30,11 +30,8 @@ const Preloader = ({ onComplete }) => {
                         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                         className="flex flex-col items-center gap-5"
                     >
-                        <h1 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter">
-                            Sinan{' '}
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-violet-600 to-rose-500">
-                                Mohammad
-                            </span>
+                        <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-slate-900 tracking-tighter">
+                            Sinan Mohammad
                         </h1>
                         <div className="flex items-center gap-3">
                             <div className="h-px w-10 bg-slate-200" />

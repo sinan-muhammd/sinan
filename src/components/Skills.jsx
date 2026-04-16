@@ -37,7 +37,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white border border-slate-200 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white border border-slate-200 p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
             >
               <h3 className="text-xl font-bold text-slate-900 mb-6 pb-4 border-b border-slate-100">
                 {skillGroup.category}

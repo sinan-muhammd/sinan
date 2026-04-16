@@ -33,9 +33,9 @@ export default function Hero() {
 
           <motion.h1 variants={item} className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tighter leading-[1.05] mb-5 text-slate-900">
             Hi, I'm{' '}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-violet-600 to-purple-600">Sinan</span>
+            <span className="text-slate-900">Sinan</span>
             <br />
-            <span className="text-slate-400">Mohammad</span>
+            <span className="text-slate-900">Mohammad</span>
           </motion.h1>
 
           <motion.h2 variants={item} className="text-xl lg:text-2xl text-slate-600 font-semibold mb-6 flex flex-wrap justify-center lg:justify-start items-center gap-3">
