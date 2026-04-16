@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Sinan A C – CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 11px;
+            color: #111;
+            background: #fff;
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 32px 40px;
+        }
+
+        /* HEADER */
+        .header { text-align: center; margin-bottom: 16px; border-bottom: 2px solid #111; padding-bottom: 14px; }
+        .header h1 { font-size: 24px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+        .header .role { font-size: 13px; letter-spacing: 3px; font-style: italic; margin-bottom: 10px; }
+        .header .contacts { font-size: 10.5px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 20px; }
+        .header .contacts span { display: flex; align-items: center; gap: 4px; }
+
+        /* SECTIONS */
+        .section { margin-bottom: 18px; }
+        .section-title {
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 1.5px solid #111;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+
+        /* PARAGRAPH */
+        .section p { line-height: 1.7; font-size: 10.5px; text-align: justify; }
+
+        /* EXP / EDU ENTRY */
+        .entry { margin-bottom: 12px; }
+        .entry-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 3px; }
+        .entry-title { font-weight: bold; font-size: 11px; }
+        .entry-sub { font-size: 10.5px; color: #333; }
+        .entry-date { font-size: 10.5px; color: #333; white-space: nowrap; }
+        .entry ul { margin-top: 5px; padding-left: 18px; }
+        .entry ul li { line-height: 1.7; font-size: 10.5px; }
+
+        /* SKILLS */
+        .skills-table { width: 100%; border-collapse: collapse; }
+        .skills-table td { font-size: 10.5px; padding: 3px 0; vertical-align: top; }
+        .skills-table .skill-label { font-weight: bold; width: 130px; }
+
+        /* SOFT SKILLS */
+        .soft-skills ul { padding-left: 18px; }
+        .soft-skills ul li { font-size: 10.5px; line-height: 1.7; }
+
+        @media print {
+            body { padding: 20px 30px; }
+            @page { margin: 10mm; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Mohammad Sinan A C</h1>
+        <div class="role">MERN Stack Developer</div>
+        <div class="contacts">
+            <span>✉ muhammedsinanac111@gmail.com</span>
+            <span>📞 7736680707</span>
+            <span>📍 Tirur, Malappuram</span>
+            <span>LinkedIn: linkedin.com/in/sinan-muhammad-ac</span>
+            <span>GitHub: github.com/mohammadsnan</span>
+        </div>
+    </div>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p>Aspiring and passionate MERN Stack Developer in HTML5, CSS, JavaScript, React, Node.js, Express and MongoDB with a focus on building responsive, user-friendly applications and solving real-world problems through clean and efficient code. Eager to learn, collaborate and contribute to impactful projects in a dynamic development environment.</p>
+    </div>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        <div class="entry">
+            <div class="entry-header">
+                <div>
+                    <div class="entry-title">Frontend Developer Intern</div>
+                    <div class="entry-sub">Febno Technologies</div>
+                </div>
+                <div class="entry-date">2025–2026</div>
+            </div>
+            <ul>
+                <li>Redesigned company website using React.js with a responsive and user-friendly UI.</li>
+                <li>Built reusable and modular React components for better scalability.</li>
+                <li>Improved UI performance by reducing unnecessary re-renders.</li>
+                <li>Integrated REST APIs using Axios/Fetch for dynamic data handling.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+        <div class="section-title">Projects</div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Voltix – EV Cars Marketplace &nbsp;<span style="font-weight:normal;">(Full-Stack MERN Project)</span></div>
+            </div>
+            <ul>
+                <li>Developed a Full-Stack Electric Vehicle Marketplace using MongoDB, Express.js, React.js, and Node.js with Dynamic Data Rendering.</li>
+                <li>Built Secure RESTful APIs with JWT Authentication, Authorization, and complete CRUD Operations for efficient backend management.</li>
+                <li>Designed a Responsive & Modern UI using React.js and Tailwind CSS, including Search, Filtering, and Real-Time Data Updates.</li>
+                <li>Implemented Database Integration, optimized queries, and ensured smooth Frontend–Backend Communication.</li>
+            </ul>
+        </div>
+
+        <div class="entry" style="margin-top: 10px;">
+            <div class="entry-header">
+                <div class="entry-title">Elite-Tech &nbsp;<span style="font-weight:normal;">(E-Commerce React Project)</span></div>
+            </div>
+            <ul>
+                <li>Developed a Responsive E-Commerce Web Application using React.js and JavaScript for electronics and fashion products.</li>
+                <li>Designed a Mobile-First, User-Friendly Interface using Tailwind CSS, optimized for Desktop, Tablet, and Mobile Devices.</li>
+                <li>Implemented Product Listing, Category Filtering, and Search Functionality to enhance User Experience (UX).</li>
+                <li>Integrated RESTful APIs for Dynamic Data Fetching and seamless Frontend Integration.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <table class="skills-table">
+            <tr>
+                <td class="skill-label">Frontend</td>
+                <td>Html5, CSS3, JavaScript (ES6), React, Tailwind CSS</td>
+            </tr>
+            <tr>
+                <td class="skill-label">Backend</td>
+                <td>Node.js, Express</td>
+            </tr>
+            <tr>
+                <td class="skill-label">Database</td>
+                <td>MongoDB</td>
+            </tr>
+            <tr>
+                <td class="skill-label">Tools & Others</td>
+                <td>Git, Github, Rest Api, Postman, VS Code</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+        <div class="section-title">Education</div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div>
+                    <div class="entry-title">Mern Stack</div>
+                    <div class="entry-sub">Technodot Academy</div>
+                </div>
+                <div class="entry-date">2025–2026</div>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div>
+                    <div class="entry-title">Bachelor of Computer Applications, University of Calicut</div>
+                    <div class="entry-sub">Moulana Arts and Science College, Tirur</div>
+                </div>
+                <div class="entry-date">2022–2025</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOFT SKILLS -->
+    <div class="section soft-skills">
+        <div class="section-title">Soft Skills</div>
+        <ul>
+            <li>Problem-Solving</li>
+            <li>Team Collaboration</li>
+            <li>Continuous Learning</li>
+        </ul>
+    </div>
+
+</body>
+</html>
