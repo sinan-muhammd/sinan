@@ -14,11 +14,11 @@ const SelectedWorks = () => {
       bg: "bg-blue-50 text-blue-700 border-blue-200"
     },
     {
-      title: 'Elite-Tech',
+      title: 'Phlox',
       category: 'E-Commerce React',
       image: 'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1632&auto=format&fit=crop',
       tags: ['React.js', 'JS', 'Tailwind CSS'],
-      link: 'https://elitetech.vercel.app/',
+      link: 'https://phlox-web.vercel.app/',
       accent: "bg-violet-500",
       bg: "bg-violet-50 text-violet-700 border-violet-200"
     }
