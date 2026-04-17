@@ -7,7 +7,7 @@ import StatsSection from "./components/StatsSection";
 import About from "./components/About";
 import ServicesSection from "./components/ServicesSection";
 import Skills from "./components/Skills";
-import ProcessSection from "./components/ProcessSection";
+
 import SelectedWorks from "./components/SelectedWorks";
 import Contact from "./components/Contact";
 import FAQ from "./components/FAQ";
@@ -35,7 +35,7 @@ export default function App() {
                 <About />
                 <ServicesSection />
                 <Skills />
-                <ProcessSection />
+              
                 <SelectedWorks />
                 <FAQ />
                 <LetsWorkTogether />
