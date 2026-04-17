@@ -7,7 +7,7 @@ const SelectedWorks = () => {
     {
       title: 'Voltix - EV Marketplace',
       category: 'Full-Stack MERN',
-      image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=1472&auto=format&fit=crop',
+      image: 'https://i.pinimg.com/1200x/ef/ab/0c/efab0c3fb465dbb600aa665278d02c6d.jpg',
       tags: ['MongoDB', 'Express', 'React', 'Node.js'],
       link: 'https://voltixev.vercel.app/',
       accent: "bg-blue-500",
@@ -16,7 +16,7 @@ const SelectedWorks = () => {
     {
       title: 'Phlox',
       category: 'E-Commerce React',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1632&auto=format&fit=crop',
+      image: 'https://i.pinimg.com/736x/53/00/63/5300630244e710970b63eac76570c343.jpg',
       tags: ['React.js', 'JS', 'Tailwind CSS'],
       link: 'https://phlox-web.vercel.app/',
       accent: "bg-violet-500",
